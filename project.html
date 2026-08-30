@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | K. Laxmi Sricharan</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter (Body), Plus Jakarta Sans (Headings), JetBrains Mono (Tech Accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased font-sans flex flex-col min-h-screen selection:bg-gray-200">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between py-4">
+        <a href="index.html" class="flex items-center space-x-3 mb-2 sm:mb-0">
+          <img class="w-10 h-10 rounded-full object-cover border border-gray-200" src="logo.jpg" alt="Logo" onerror="this.src='https://via.placeholder.com/50'" />
+          <span class="font-heading text-xl font-bold tracking-tight text-gray-900">Sricharan Codes</span>
+        </a>
+        <nav>
+          <ul class="flex flex-wrap items-center space-x-1 sm:space-x-2 text-sm font-medium">
+            <li><a href="index.html" class="px-3.5 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition">Home</a></li>
+            <li><a href="project.html" class="px-3.5 py-1.5 rounded-md bg-black text-white font-semibold shadow-sm">Projects</a></li>
+            <li><a href="hobbies.html" class="px-3.5 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition">Hobbies</a></li>
+            <li><a href="experience.html" class="px-3.5 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition">Experience</a></li>
+            <li><a href="about.html" class="px-3.5 py-1.5 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
+
+    <!-- Header Section -->
+    <div class="max-w-2xl mb-12 sm:mb-16">
+      <span class="font-mono text-xs uppercase tracking-widest text-gray-500 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full inline-block mb-3">
+        Engineering Artifacts
+      </span>
+      <h1 class="font-heading text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">Featured Projects</h1>
+      <p class="mt-3 text-gray-600 text-base sm:text-lg leading-relaxed">
+        A breakdown of command-line tools, web apps, and interfaces I've built with an emphasis on structure and clean design.
+      </p>
+    </div>
+
+    <!-- Enhanced Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1: SafePath -->
+      <div class="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="relative w-full h-56 bg-gray-50 border-b border-gray-100 flex items-center justify-center p-8 overflow-hidden">
+            <img src="safepath1.png" alt="SafePath" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300" onerror="this.src='https://via.placeholder.com/300x150?text=SafePath'" />
+            <span class="absolute top-4 right-4 font-mono text-[11px] font-semibold bg-white/90 backdrop-blur-sm border border-gray-200 text-gray-700 px-2.5 py-1 rounded-md shadow-sm">
+              CLI / Systems
+            </span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">C</span>
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">Algorithms</span>
+            </div>
+            <h2 class="font-heading text-xl font-bold text-gray-900 group-hover:text-black transition">SafePath</h2>
+            <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+              A pure C, terminal-based application designed as a reliable, safety-focused routing tool engineered for the standard command-line interface.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex items-center gap-2 pt-4 border-t border-gray-100">
+            <a href="https://github.com/sricharan-codes" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-black hover:bg-neutral-800 text-white rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-github text-sm"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/laxmi-sricharan-k-aa8933287/" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-linkedin text-sm"></i> Connect
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: TinDog -->
+      <div class="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="relative w-full h-56 bg-gray-50 border-b border-gray-100 flex items-center justify-center overflow-hidden">
+            <img src="tindog.png" alt="TinDog" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://via.placeholder.com/300x150?text=TinDog'" />
+            <span class="absolute top-4 right-4 font-mono text-[11px] font-semibold bg-white/90 backdrop-blur-sm border border-gray-200 text-gray-700 px-2.5 py-1 rounded-md shadow-sm">
+              Frontend
+            </span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">HTML5</span>
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">CSS3</span>
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">Responsive</span>
+            </div>
+            <h2 class="font-heading text-xl font-bold text-gray-900 group-hover:text-black transition">TinDog</h2>
+            <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+              A responsive, single-page landing interface designed as a playful, modern parody of dating apps with mobile-first layouts.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex items-center gap-2 pt-4 border-t border-gray-100">
+            <a href="https://github.com/sricharan-codes" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-black hover:bg-neutral-800 text-white rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-github text-sm"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/laxmi-sricharan-k-aa8933287/" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-linkedin text-sm"></i> Connect
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Move With Joy -->
+      <div class="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="relative w-full h-56 bg-gray-50 border-b border-gray-100 flex items-center justify-center overflow-hidden">
+            <img src="moveit.png" alt="Move With Joy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://via.placeholder.com/300x150?text=Move+With+Joy'" />
+            <span class="absolute top-4 right-4 font-mono text-[11px] font-semibold bg-white/90 backdrop-blur-sm border border-gray-200 text-gray-700 px-2.5 py-1 rounded-md shadow-sm">
+              Landing Page
+            </span>
+          </div>
+
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">Bootstrap / Tailwind</span>
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">UI/UX</span>
+            </div>
+            <h2 class="font-heading text-xl font-bold text-gray-900 group-hover:text-black transition">Move With Joy</h2>
+            <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+              A modern logistics and relocation company landing platform structured with responsive viewports, call-to-action sections, and clean typography.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex items-center gap-2 pt-4 border-t border-gray-100">
+            <a href="https://github.com/sricharan-codes" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-black hover:bg-neutral-800 text-white rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-github text-sm"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/laxmi-sricharan-k-aa8933287/" target="_blank" class="flex-1 text-center font-mono text-xs font-semibold py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 rounded-lg transition inline-flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-linkedin text-sm"></i> Connect
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom GitHub Callout -->
+    <div class="mt-16 p-8 rounded-2xl bg-white border border-gray-200 text-center max-w-2xl mx-auto shadow-sm">
+      <h3 class="font-heading text-xl font-bold text-gray-900">Looking for more source code?</h3>
+      <p class="text-gray-600 text-sm mt-2">
+        I frequently push algorithm implementations, system utilities, and practice builds on GitHub.
+      </p>
+      <div class="mt-5">
+        <a href="https://github.com/sricharan-codes" target="_blank" class="font-mono text-xs inline-flex items-center gap-2 px-6 py-3 bg-black hover:bg-neutral-800 text-white font-semibold rounded-lg shadow-sm transition">
+          <i class="fa-brands fa-github text-sm"></i> VISIT GITHUB PROFILE
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 mt-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="font-mono text-xs text-gray-500">
+          © Sricharan Codes
+        </div>
+        <ul class="flex items-center space-x-4">
+          <li>
+            <a href="https://www.instagram.com/whossricharan/" aria-label="Instagram" class="hover:opacity-80 transition">
+              <img src="insta.png" alt="Instagram" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/laxmi-sricharan-k-aa8933287/" aria-label="LinkedIn" class="hover:opacity-80 transition">
+              <img src="linkedin.png" alt="LinkedIn" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sricharan-codes" aria-label="Github" class="hover:opacity-80 transition">
+              <img src="github.png" alt="Github" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

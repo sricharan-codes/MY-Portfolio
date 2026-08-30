@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbies | K. Laxmi Sricharan</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-italic {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body class="bg-[#faf9f6] text-neutral-800 antialiased min-h-screen flex flex-col selection:bg-neutral-200">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-neutral-200/80 bg-white/70 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-wrap items-center justify-between py-4">
+        <a href="index.html" class="flex items-center space-x-3">
+          <img class="w-10 h-10 rounded-full object-cover border border-neutral-200" src="logo.jpg" alt="Logo" onerror="this.src='https://via.placeholder.com/50'" />
+          <span class="text-xl font-bold tracking-tight text-neutral-900">Sricharan Codes</span>
+        </a>
+        <nav>
+          <ul class="flex items-center space-x-1 sm:space-x-2 text-sm font-medium">
+            <li><a href="index.html" class="px-3 py-1.5 rounded-md text-neutral-600 hover:text-black hover:bg-neutral-100 transition">Home</a></li>
+            <li><a href="project.html" class="px-3 py-1.5 rounded-md text-neutral-600 hover:text-black hover:bg-neutral-100 transition">Projects</a></li>
+            <li><a href="hobbies.html" class="px-3 py-1.5 rounded-md bg-black text-white font-semibold shadow-sm">Hobbies</a></li>
+            <li><a href="experience.html" class="px-3 py-1.5 rounded-md text-neutral-600 hover:text-black hover:bg-neutral-100 transition">Experience</a></li>
+            <li><a href="aboutme.html" class="px-3 py-1.5 rounded-md text-neutral-600 hover:text-black hover:bg-neutral-100 transition">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full">
+
+    <!-- Editorial Header Title -->
+    <div class="mb-14 sm:mb-20 max-w-2xl">
+      <span class="text-xs uppercase tracking-widest font-bold text-neutral-600 bg-neutral-100 px-3 py-1 rounded-full border border-neutral-200 inline-block mb-3">
+        Off the Keyboard
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+        Things that keep me <span class="font-serif-italic font-normal text-neutral-600">curious & sane.</span>
+      </h1>
+      <p class="mt-4 text-neutral-600 text-base sm:text-lg leading-relaxed">
+        When I’m not debugging memory allocations or grinding algorithms, you’ll usually find me lifting, analyzing psychological plots, or geeking out over tech podcasts.
+      </p>
+    </div>
+
+    <!-- Asymmetric Human-Style Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+      <!-- Card 1: Gym / Fitness (Featured Large Tile) -->
+      <div class="md:col-span-7 bg-white rounded-2xl p-7 border border-neutral-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <div class="w-12 h-12 rounded-xl bg-neutral-100 border border-neutral-200 flex items-center justify-center text-neutral-800">
+              <i class="fa-solid fa-dumbbell text-xl"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">Daily Ritual</span>
+          </div>
+          <h2 class="text-2xl font-bold text-neutral-900 mb-2">Strength Training & Gym</h2>
+          <p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+            Hitting the weights every evening is my reset switch. It teaches patience, progressive overload, and physical discipline—traits that transfer straight into software engineering when debugging stubborn code for hours.
+          </p>
+        </div>
+        <div class="mt-6 pt-5 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-500">
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">Consistency</span>
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">Evening Sessions</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Psychological Thrillers (Compact Card) -->
+      <div class="md:col-span-5 bg-white rounded-2xl p-7 border border-neutral-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <div class="w-12 h-12 rounded-xl bg-neutral-100 border border-neutral-200 flex items-center justify-center text-neutral-800">
+              <i class="fa-solid fa-chess-knight text-xl"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">Analysis</span>
+          </div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-2">Psychological Thrillers</h2>
+          <p class="text-neutral-600 leading-relaxed text-sm">
+            Huge fan of high-stakes, strategy-heavy shows like <em>Classroom of the Elite</em> and <em>Death Note</em>. I enjoy deconstructing character incentives, game theory, and multi-step plans.
+          </p>
+        </div>
+        <div class="mt-6 pt-5 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-500">
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">Game Theory</span>
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">Strategy</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Tech Discussions & Podcasting -->
+      <div class="md:col-span-5 bg-black text-white rounded-2xl p-7 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <div class="w-12 h-12 rounded-xl bg-neutral-800 border border-neutral-700 flex items-center justify-center text-neutral-200">
+              <i class="fa-solid fa-comments text-xl"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">Passion</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">Tech Discussions & Ideas</h2>
+          <p class="text-neutral-300 leading-relaxed text-sm">
+            I love breaking down architectural concepts, developer tools, and the latest hardware announcements with peers. Discussing system ideas out loud helps clarify intuition.
+          </p>
+        </div>
+        <div class="mt-6 pt-5 border-t border-neutral-800 text-xs text-neutral-400 font-medium">
+          Always up for a deep tech chat ☕
+        </div>
+      </div>
+
+      <!-- Card 4: Code Experiments -->
+      <div class="md:col-span-7 bg-white rounded-2xl p-7 border border-neutral-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <div class="w-12 h-12 rounded-xl bg-neutral-100 border border-neutral-200 flex items-center justify-center text-neutral-800">
+              <i class="fa-solid fa-terminal text-xl"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">Tinkering</span>
+          </div>
+          <h2 class="text-2xl font-bold text-neutral-900 mb-2">Weekend Code Experiments</h2>
+          <p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+            Exploring niche open-source repositories, scripting small automation tools, or experimenting with terminal productivity tools. Coding feels best when building purely out of curiosity.
+          </p>
+        </div>
+        <div class="mt-6 pt-5 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-500">
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">CLI Tools</span>
+          <span class="bg-neutral-100 px-3 py-1 rounded-md">Open Source</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Personal Quote / Human Note -->
+    <div class="mt-16 p-8 rounded-2xl bg-neutral-100 border border-neutral-200 text-center max-w-2xl mx-auto">
+      <p class="font-serif-italic text-lg text-neutral-900">
+        "Master the fundamentals, keep your mind sharp with strategy, and stay grounded in hard work."
+      </p>
+      <span class="block mt-3 text-xs uppercase tracking-wider font-bold text-neutral-500">— Personal Philosophy</span>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 mt-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-neutral-500">
+          © Sricharan Codes
+        </div>
+        <ul class="flex items-center space-x-4">
+          <li>
+            <a href="https://www.instagram.com/whossricharan/" aria-label="Instagram" class="hover:opacity-80 transition">
+              <img src="insta.png" alt="Instagram" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/laxmi-sricharan-k-aa8933287/" aria-label="LinkedIn" class="hover:opacity-80 transition">
+              <img src="linkedin.png" alt="LinkedIn" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sricharan-codes" aria-label="Github" class="hover:opacity-80 transition">
+              <img src="github.png" alt="Github" class="w-7 h-7 object-contain" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
